@@ -20,6 +20,23 @@
       padding: 1.5rem;
       margin-bottom: 1.5rem;
     }
+    .bonus {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid #f0a500;
+    }
+    .bonus-label {
+      display: inline-block;
+      background: #fff3cd;
+      color: #856404;
+      font-size: 0.8rem;
+      font-weight: bold;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 0.8rem;
+    }
     video { width: 100%; border-radius: 8px; }
     .game-grid {
       display: grid;
@@ -44,6 +61,17 @@
       font-size: 0.9rem;
     }
     .btn:hover { background: #218a3e; }
+    .btn-python {
+      display: inline-block;
+      background: #3572A5;
+      color: white;
+      padding: 8px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+    }
+    .btn-python:hover { background: #285a8a; }
   </style>
 </head>
 <body>
@@ -99,6 +127,18 @@
       <source src="Slither.mp4" type="video/mp4">
       동영상을 재생할 수 없습니다.
     </video>
+  </div>
+
+  <!-- 번외편 -->
+  <div class="bonus">
+    <span class="bonus-label">번외편</span>
+    <h2>파이썬 자동화 프로그램 시연 영상</h2>
+    <video controls>
+      <source src="매크로시연.mp4" type="video/mp4">
+      동영상을 재생할 수 없습니다.
+    </video>
+    <br>
+    <a href="main.py" download class="btn-python">코드 다운로드 (.py)</a>
   </div>
 
 </body>
