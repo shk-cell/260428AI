@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>내 동영상 페이지</title>
+  <title>내 게임 & 동영상</title>
   <style>
     body {
       font-family: sans-serif;
@@ -12,51 +12,91 @@
       padding: 2rem 1rem;
       background: #f5f5f5;
     }
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .video-section {
+    h1 { text-align: center; margin-bottom: 2rem; }
+    h2 { margin: 0 0 1rem; font-size: 1.1rem; color: #333; }
+    .section {
       background: white;
       border-radius: 12px;
       padding: 1.5rem;
       margin-bottom: 1.5rem;
     }
-    .video-section h2 {
-      margin: 0 0 1rem;
-      font-size: 1.1rem;
-      color: #333;
+    video { width: 100%; border-radius: 8px; }
+    .game-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
     }
-    video {
-      width: 100%;
+    .game-card {
+      background: #f0f4ff;
+      border-radius: 10px;
+      padding: 1.2rem;
+      text-align: center;
+    }
+    .game-card h3 { margin: 0 0 0.5rem; font-size: 1rem; }
+    .game-card p { margin: 0 0 1rem; font-size: 0.85rem; color: #666; }
+    .btn {
+      display: inline-block;
+      background: #2da44e;
+      color: white;
+      padding: 8px 20px;
       border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.9rem;
     }
+    .btn:hover { background: #218a3e; }
   </style>
 </head>
 <body>
 
-  <h1>수업 동영상</h1>
+  <h1>수업 자료</h1>
 
-  <div class="video-section">
-    <h2>동영상 1 - Soccer</h2>
+  <!-- 게임 다운로드 -->
+  <div class="section">
+    <h2>게임 프로젝트 다운로드</h2>
+    <div class="game-grid">
+
+      <div class="game-card">
+        <h3>Soccer</h3>
+        <p>멀티플레이어 축구 게임</p>
+        <a href="Soccer.zip" download class="btn">다운로드</a>
+      </div>
+
+      <div class="game-card">
+        <h3>Battle City</h3>
+        <p>탱크 배틀 게임</p>
+        <a href="BattleCity.zip" download class="btn">다운로드</a>
+      </div>
+
+      <div class="game-card">
+        <h3>Slither</h3>
+        <p>멀티플레이어 뱀 게임</p>
+        <a href="Slither.zip" download class="btn">다운로드</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 동영상 -->
+  <div class="section">
+    <h2>동영상 1 - 제목을 여기에</h2>
     <video controls>
-      <source src="Soccer.mp4" type="video/mp4">
+      <source src="video1.mp4" type="video/mp4">
       동영상을 재생할 수 없습니다.
     </video>
   </div>
 
-  <div class="video-section">
-    <h2>동영상 2 - BattleCity</h2>
+  <div class="section">
+    <h2>동영상 2 - 제목을 여기에</h2>
     <video controls>
-      <source src="BattleCity.mp4" type="video/mp4">
+      <source src="video2.mp4" type="video/mp4">
       동영상을 재생할 수 없습니다.
     </video>
   </div>
 
-  <div class="video-section">
-    <h2>동영상 3 - Slither</h2>
+  <div class="section">
+    <h2>동영상 3 - 제목을 여기에</h2>
     <video controls>
-      <source src="Slither.mp4" type="video/mp4">
+      <source src="video3.mp4" type="video/mp4">
       동영상을 재생할 수 없습니다.
     </video>
   </div>
