@@ -38,19 +38,6 @@
       margin-bottom: 0.8rem;
     }
     video { width: 100%; border-radius: 8px; }
-    .game-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-    }
-    .game-card {
-      background: #f0f4ff;
-      border-radius: 10px;
-      padding: 1.2rem;
-      text-align: center;
-    }
-    .game-card h3 { margin: 0 0 0.5rem; font-size: 1rem; }
-    .game-card p { margin: 0 0 1rem; font-size: 0.85rem; color: #666; }
     .btn {
       display: inline-block;
       background: #2da44e;
@@ -59,6 +46,7 @@
       border-radius: 8px;
       text-decoration: none;
       font-size: 0.9rem;
+      margin-top: 1rem;
     }
     .btn:hover { background: #218a3e; }
     .btn-python {
@@ -78,39 +66,14 @@
 
   <h1>수업 자료</h1>
 
-  <!-- 게임 다운로드 -->
-  <div class="section">
-    <h2>게임 프로젝트 다운로드</h2>
-    <div class="game-grid">
-
-      <div class="game-card">
-        <h3>Soccer</h3>
-        <p>멀티플레이어 축구 게임</p>
-        <a href="Soccer.zip" download class="btn">다운로드</a>
-      </div>
-
-      <div class="game-card">
-        <h3>Battle City</h3>
-        <p>탱크 배틀 게임</p>
-        <a href="BattleCity.zip" download class="btn">다운로드</a>
-      </div>
-
-      <div class="game-card">
-        <h3>Slither</h3>
-        <p>멀티플레이어 뱀 게임</p>
-        <a href="Slither.zip" download class="btn">다운로드</a>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- 동영상 -->
   <div class="section">
     <h2>Soccer</h2>
     <video controls>
       <source src="Soccer.mp4" type="video/mp4">
       동영상을 재생할 수 없습니다.
     </video>
+    <br>
+    <a href="Soccer.zip" download class="btn">Soccer 다운로드</a>
   </div>
 
   <div class="section">
@@ -119,6 +82,8 @@
       <source src="BattleCity.mp4" type="video/mp4">
       동영상을 재생할 수 없습니다.
     </video>
+    <br>
+    <a href="BattleCity.zip" download class="btn">Battle City 다운로드</a>
   </div>
 
   <div class="section">
@@ -127,12 +92,13 @@
       <source src="Slither.mp4" type="video/mp4">
       동영상을 재생할 수 없습니다.
     </video>
+    <br>
+    <a href="Slither.zip" download class="btn">Slither 다운로드</a>
   </div>
 
-  <!-- 번외편 -->
   <div class="bonus">
     <span class="bonus-label">번외편</span>
-    <h2>파이썬 자동화 프로그램 시연 영상</h2>
+    <h2>매크로 시연 영상</h2>
     <video controls>
       <source src="매크로시연영상.mp4" type="video/mp4">
       동영상을 재생할 수 없습니다.
